@@ -1,0 +1,14 @@
+name: VillagerPocket
+version: 1.0.0
+main: com.example.villagerpocket.VillagerPocket
+api-version: '1.21'
+commands:
+  villagerpocket:
+    description: Opens the villager reroll menu for the villager you are looking at.
+    usage: /villagerpocket
+    aliases: [vpocket, villagerroll]
+permissions:
+  villagerpocket.use:
+    default: true
+  villagerpocket.admin:
+    default: op

@@ -1,0 +1,15 @@
+BUILD VILLAGERPOCKET ON GITHUB (no local Gradle install needed)
+
+1. Sign in to https://github.com/ and create a new repository.
+2. Upload the CONTENTS of this folder to the repository (not the outer folder itself).
+   Make sure build.gradle, settings.gradle, src/, and .github/workflows/build.yml are at the repository root.
+3. Commit the files to the main branch.
+4. Open the repository's Actions tab.
+5. Select "Build VillagerPocket" and wait for the run to finish.
+6. Open the successful workflow run. Under Artifacts, download "VillagerPocket-JAR".
+7. Extract that artifact; it should contain VillagerPocket-1.0.0.jar.
+8. Put the JAR into your Paper server's plugins folder and restart.
+
+If the workflow fails, open the run, copy the error from the "Compile plugin" step, and share it so the source can be corrected.
+
+This workflow compiles on GitHub's hosted runner; it does not itself verify runtime behavior on a live Paper server.
